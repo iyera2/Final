@@ -1,9 +1,9 @@
 import java.util.Random;
 public class Character{
-    private String role;
     private int totalPoints = 0, strength, toughness, intelligence, magic, influence;
     Random random = new Random();
 
+    //CONSTRUCTOR
     public Character(String character) {
         if (character == "knight") {
             while (totalPoints <= 25 && totalPoints > 8) {
@@ -46,13 +46,35 @@ public class Character{
                 this.strength = Skills(random);
                 this.toughness = Skills(random);
                 this.intelligence = Skills(random);
-                this.magic = mainStat(random);
-                this.influence = Skills(random);
+                this.magic = Skills(random);
+                this.influence = mainStat(random);
                 totalPoints = strength+toughness+intelligence+magic+influence;
             }  
         }
     }
 
+    //GETTERS
+    public int getStrength(){
+        return this.strength;
+    }
+
+    public int getToughness(){
+        return this.toughness;
+    }
+
+    public int getIntelligence(){
+        return this.intelligence; 
+    }
+
+    public int getMagic(){
+        return this.magic;
+    }
+
+    public int getInfluence(){
+        return this.influence;
+    }
+
+    //STATIC FUNCTIONS
     private static int mainStat(Random random){
         return random.nextInt(4) + 7;
     }
@@ -61,7 +83,8 @@ public class Character{
         return random.nextInt(6);
     }
 
+    //TOSTRING
     public String toString() {
-        return "Role: " + role + ", Strength: " + strength + ",Toughness" + toughness + ",Intelligence: " + intelligence + ",Influence: " + influence + ".";
+        return "Strength: " + getStrength() + " Toughness: " + getToughness() + " Intelligence: " + getIntelligence() + " Magic: " + getMagic() + " Influence: " + getInfluence();
     }
 }
