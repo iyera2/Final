@@ -1,11 +1,60 @@
 import java.util.Random;
 public class Character{
-    private String charname;
+    private String charname, character;
     private int totalPoints = 0, strength, toughness, intelligence, magic, influence;
     Random random = new Random();
 
     //CONSTRUCTOR
     public Character(String character) {
+        if (character == "knight") {
+            while (totalPoints <= 25 && totalPoints > 8) {
+                this.strength = mainStat(random);
+                this.toughness = Skills(random);
+                this.intelligence = Skills(random);
+                this.magic = Skills(random);
+                this.influence = Skills(random);
+                totalPoints = strength+toughness+intelligence+magic+influence;
+            }
+        } else if(character == "peasant"){
+            while (totalPoints <= 25 && totalPoints > 8) {
+                this.strength = Skills(random);
+                this.toughness = mainStat(random);
+                this.intelligence = Skills(random);
+                this.magic = Skills(random);
+                this.influence = Skills(random);
+                totalPoints = strength+toughness+intelligence+magic+influence;
+            }
+        } else if(character == "cleric"){
+            while (totalPoints <= 25 && totalPoints > 8) {
+                this.strength = Skills(random);
+                this.toughness = Skills(random);
+                this.intelligence = mainStat(random);
+                this.magic = Skills(random);
+                this.influence = Skills(random);
+                totalPoints = strength+toughness+intelligence+magic+influence;
+            } 
+        } else if(character == "mage"){
+            while (totalPoints <= 25 && totalPoints > 8) {
+                this.strength = Skills(random);
+                this.toughness = Skills(random);
+                this.intelligence = Skills(random);
+                this.magic = mainStat(random);
+                this.influence = Skills(random);
+                totalPoints = strength+toughness+intelligence+magic+influence;
+            } 
+        } else if(character == "courtier"){
+            while (totalPoints <= 25 && totalPoints > 8) {
+                this.strength = Skills(random);
+                this.toughness = Skills(random);
+                this.intelligence = Skills(random);
+                this.magic = Skills(random);
+                this.influence = mainStat(random);
+                totalPoints = strength+toughness+intelligence+magic+influence;
+            }  
+        }
+    }
+    //VOID FUNCTION
+    public void redo() {
         if (character == "knight") {
             while (totalPoints <= 25 && totalPoints > 8) {
                 this.strength = mainStat(random);

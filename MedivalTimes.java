@@ -45,7 +45,9 @@ public class MedivalTimes{
                 case 2:
 
                 case 3:
-
+                    System.out.println("Which character do you want to redo(knight, peasant, cleric, mage, or courtier)");
+                    Character char6 = new Character(scan.nextLine());
+                    char6.redo();
                 case 4:
                     isRunning = false;
                     System.out.println("Quitting");
