@@ -18,14 +18,29 @@ public class MedivalTimes{
                     String name = scan.nextLine().trim();
                     System.out.println("Enter knight, peasant, cleric, mage, or courtier(NO REPEATS): ");
                     Character char1 = new Character(scan.nextLine());
+                    System.out.println("Name your character:");
+                    String char1name = scan.nextLine();
+                    char1.setName(char1name);
                     System.out.println("Enter knight, peasant, cleric, mage, or courtier(NO REPEATS): ");
                     Character char2 = new Character(scan.nextLine());
+                    System.out.println("Name your 2nd character:");
+                    String char2name = scan.nextLine();
+                    char2.setName(char2name);
                     System.out.println("Enter knight, peasant, cleric, mage, or courtier(NO REPEATS): ");
                     Character char3 = new Character(scan.nextLine());
+                    System.out.println("Name your 3rd character:");
+                    String char3name = scan.nextLine();
+                    char3.setName(char3name);
                     System.out.println("Enter knight, peasant, cleric, mage, or courtier(NO REPEATS): ");
                     Character char4 = new Character(scan.nextLine());
+                    System.out.println("Name your 4th character:");
+                    String char4name = scan.nextLine();
+                    char4.setName(char4name);
                     System.out.println("Enter knight, peasant, cleric, mage, or courtier(NO REPEATS): ");
                     Character char5 = new Character(scan.nextLine());
+                    System.out.println("Name your 5th character:");
+                    String char5name = scan.nextLine();
+                    char5.setName(char5name);
                     GameCharacter finalgame = new GameCharacter(name, char1, char2, char3, char4, char5);
                 case 2:
 

@@ -1,5 +1,6 @@
 import java.util.Random;
 public class Character{
+    private String charname;
     private int totalPoints = 0, strength, toughness, intelligence, magic, influence;
     Random random = new Random();
 
@@ -51,6 +52,11 @@ public class Character{
                 totalPoints = strength+toughness+intelligence+magic+influence;
             }  
         }
+    }
+
+    //SETTERS
+    public void setName(String charname){
+        this.charname = charname;
     }
 
     //GETTERS
