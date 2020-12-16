@@ -6,7 +6,7 @@ public class Character{
 
     //CONSTRUCTOR
     public Character(String character) {
-        if (character == "knight") {
+        if (character.equals("knight")) {
             while (totalPoints <= 25 && totalPoints > 8) {
                 this.strength = mainStat(random);
                 this.toughness = Skills(random);
@@ -15,7 +15,7 @@ public class Character{
                 this.influence = Skills(random);
                 totalPoints = strength+toughness+intelligence+magic+influence;
             }
-        } else if(character == "peasant"){
+        } else if(character.equals("peasant")){
             while (totalPoints <= 25 && totalPoints > 8) {
                 this.strength = Skills(random);
                 this.toughness = mainStat(random);
@@ -24,7 +24,7 @@ public class Character{
                 this.influence = Skills(random);
                 totalPoints = strength+toughness+intelligence+magic+influence;
             }
-        } else if(character == "cleric"){
+        } else if(character.equals("cleric")){
             while (totalPoints <= 25 && totalPoints > 8) {
                 this.strength = Skills(random);
                 this.toughness = Skills(random);
@@ -33,7 +33,7 @@ public class Character{
                 this.influence = Skills(random);
                 totalPoints = strength+toughness+intelligence+magic+influence;
             } 
-        } else if(character == "mage"){
+        } else if(character.equals("mage")){
             while (totalPoints <= 25 && totalPoints > 8) {
                 this.strength = Skills(random);
                 this.toughness = Skills(random);
@@ -42,7 +42,7 @@ public class Character{
                 this.influence = Skills(random);
                 totalPoints = strength+toughness+intelligence+magic+influence;
             } 
-        } else if(character == "courtier"){
+        } else if(character.equals("courtier")){
             while (totalPoints <= 25 && totalPoints > 8) {
                 this.strength = Skills(random);
                 this.toughness = Skills(random);
@@ -55,7 +55,7 @@ public class Character{
     }
     //VOID FUNCTION
     public void redo() {
-        if (character == "knight") {
+        if (character.equals("knight")) {
             while (totalPoints <= 25 && totalPoints > 8) {
                 this.strength = mainStat(random);
                 this.toughness = Skills(random);
@@ -64,7 +64,7 @@ public class Character{
                 this.influence = Skills(random);
                 totalPoints = strength+toughness+intelligence+magic+influence;
             }
-        } else if(character == "peasant"){
+        } else if(character.equals("peasant")){
             while (totalPoints <= 25 && totalPoints > 8) {
                 this.strength = Skills(random);
                 this.toughness = mainStat(random);
@@ -73,7 +73,7 @@ public class Character{
                 this.influence = Skills(random);
                 totalPoints = strength+toughness+intelligence+magic+influence;
             }
-        } else if(character == "cleric"){
+        } else if(character.equals("cleric")){
             while (totalPoints <= 25 && totalPoints > 8) {
                 this.strength = Skills(random);
                 this.toughness = Skills(random);
@@ -82,7 +82,7 @@ public class Character{
                 this.influence = Skills(random);
                 totalPoints = strength+toughness+intelligence+magic+influence;
             } 
-        } else if(character == "mage"){
+        } else if(character.equals("mage")){
             while (totalPoints <= 25 && totalPoints > 8) {
                 this.strength = Skills(random);
                 this.toughness = Skills(random);
@@ -91,7 +91,7 @@ public class Character{
                 this.influence = Skills(random);
                 totalPoints = strength+toughness+intelligence+magic+influence;
             } 
-        } else if(character == "courtier"){
+        } else if(character.equals("courtier")){
             while (totalPoints <= 25 && totalPoints > 8) {
                 this.strength = Skills(random);
                 this.toughness = Skills(random);
