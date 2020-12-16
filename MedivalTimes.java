@@ -56,21 +56,27 @@ public class MedivalTimes{
                     String string = scan.next(); //These variables suck but I couldn't come up anything better
 
                     if (string.indexOf(",") >= 0) {  
-                        isErrous = true; }
+                        isErrous = true; 
+                    } else {
+                        isErrous = false;
+                    }
 
                     while(scan3.hasNext()){
                         if(scan.nextLine().split(",").length != 7){
                             isErrous = true;
-                        } else {
-                            System.out.println("Your file is valid");
-                        }
+                    } else {
+                        isErrous = false;
                     }
+                }
 
                     if(isErrous = true){
                         System.out.println("You file is wrong");
+                        break;
                     } else {
                         System.out.println("Your file is correct");
+                        break;
                     }
+                
                 case 3:
                     System.out.println("Which character do you want to redo(knight, peasant, cleric, mage, or courtier)");
                     Character char6 = new Character(scan.next());
