@@ -1,6 +1,0 @@
-HELLO
-GameName HELLOand Character Name: bob1
-GameName HELLOand Character Name: BOB2
-GameName HELLOand Character Name: bob3
-GameName HELLOand Character Name: bob4
-GameName HELLOand Character Name: bob5
